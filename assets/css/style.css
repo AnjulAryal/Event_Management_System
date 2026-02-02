@@ -1,0 +1,359 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fb;
+    color: #333;
+    min-height: 100vh;
+    padding-top: 70px;
+    overflow-x: hidden;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background: #3C3C3C;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #75BF44;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-btn {
+    background: #75BF44;
+    padding: 8px 14px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+    min-height: 80vh;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+/* ================= DASHBOARD ================= */
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.search-bar {
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* ================= EVENT GRID ================= */
+.event-grid {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* ================= EVENT CARD ================= */
+.event-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.event-img-box {
+    width: 100%;
+    overflow: hidden;
+}
+
+.event-img-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.event-img-placeholder {
+    height: 180px;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.event-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.category-tag {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #75BF44;
+    margin-bottom: 0.5rem;
+}
+
+.event-meta {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.event-meta span {
+    display: block;
+}
+
+.event-footer {
+    margin-top: auto;
+}
+
+/* ================= BUTTONS ================= */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #75BF44;
+    color: #fff;
+}
+
+.btn-secondary {
+    background: #aaa;
+    color: #fff;
+}
+
+.btn-danger {
+    background: #dc3545;
+    color: #fff;
+}
+
+.btn-view {
+    background: #3C3C3C;
+    color: #fff;
+}
+
+.btn-disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* ================= ADMIN ACTIONS ================= */
+.admin-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+    z-index: 10;
+}
+
+/* ================= FORMS ================= */
+.form-container {
+    max-width: 800px;
+    background: #fff;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 8px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+/* ================= ALERTS ================= */
+.alert {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.alert-danger {
+    background: #f8d7da;
+    color: #842029;
+}
+
+.alert-success {
+    background: #d1e7dd;
+    color: #0f5132;
+}
+
+/* ================= AUTH ================= */
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    min-height: 100vh;
+}
+
+.auth-container {
+    background: #fff;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.auth-container h1 {
+    text-align: center;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.auth-container p {
+    margin: 1rem;
+}
+
+/* ================= EVENT DETAIL ================= */
+.event-detail-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+.detail-img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.event-detail-body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.detail-sidebar {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.sidebar-info .info-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+/* ================= ATTENDEE TABLE ================= */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.attendee-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.attendee-table th,
+.attendee-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #3C3C3C;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 2rem;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+    .event-detail-body {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+}
