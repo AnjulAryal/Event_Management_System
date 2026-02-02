@@ -1,5 +1,8 @@
 # Event Management System
 
+## Website Link 
+https://student.heraldcollege.edu.np/~np03cs4a240370/Event_Management_System/public/index.php
+
 ## Overview
 A web-based application for managing events, allowing organizers to create and manage events, and attendees to search and register for them. Built with PHP and MySQL.
 
