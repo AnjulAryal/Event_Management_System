@@ -18,25 +18,17 @@ A web-based application for managing events, allowing organizers to create and m
     - Open **phpMyAdmin**.
     - Create a new database named `np03cs4a240370` (or update `config/db.php` with your database name).
     - Import the provided SQL structure/data (if available) or ensure the following tables exist: `users`, `events`, `categories`, `registrations`.
-3.  **Configuration**:
-    - Verify database credentials in `config/db.php`:
-        ```php
-        $server = "localhost";
-        $database = "np03cs4a240370";
-        $username = "np03cs4a240370"; // Update if using 'root'
-        $password = "UCEBahVfIn";   // Update if using '' or your password
-        ```
-4.  **Launch**:
+3.  **Launch**:
     - Open your browser and navigate to:
       `http://localhost/Event_Management_System/public/index.php`
 
 ##  Login Credentials
 
-> **Note**: If no default users are provided in the database script, please register a new account.
+> **Note**: Only one admin is authorized for CRUD Operations So use below oragnizer account to perform CRUD Operations.
 
 **Organizer Account** (Example/Placeholder)
-- **Email**: `organizer@example.com`
-- **Password**: `password123`
+- **Email**: `aryalanjul123@gmail.com`
+- **Password**: `Anjul@333`
 - *Role*: Can create, edit, and delete events.
 
 **Attendee Account** (Example/Placeholder)
@@ -66,6 +58,6 @@ A web-based application for managing events, allowing organizers to create and m
 - **Architecture**: Organized functionality with separation of concerns (`public`, `includes`, `config`, `assets`).
 - **Styling**: Modern CSS using 'Inter' typography and glass-like card designs.
 
-## 🐛 Known Issues
+##  Known Issues
 - **Image Uploads**: Ensure the `assets/uploads/` directory has write permissions (`chmod 777` on Unix-based systems) for image uploads to work correctly.
 - **Email**: Password reset functionality is currently a placeholder (if applicable).
